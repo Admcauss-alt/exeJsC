@@ -29,4 +29,4 @@
 ## Agradecimentos
 * <a href="https://github.com/ldmfabio"><img alt="GitHub" src="https://img.shields.io/badge/ldmfabio%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/></a>
 ## Contato
-* <a href="https://wa.me//554792091566"><img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp%20Group-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
+* <a href="https://wa.me//554792091566"><img alt="WhatsApp" src="https://img.shields.io/badge/WhatsApp%20Contato-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/></a>
