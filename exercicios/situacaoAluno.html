@@ -1,0 +1,17 @@
+<script>
+  const anoMedia = Number(prompt("media anual do aluno:"));
+  const faltas = Number(prompt("quantidade de faltas"));
+  const aulas = Number(
+    prompt("quantidade de aulas ministradas dessa disciplina ")
+  );
+
+  const porcentagem = (faltas * 100) / aulas;
+
+  if (anoMedia >= 7 && porcentagem <= 25) {
+    document.write("Ap");
+  } else if (anoMedia <= 7 && porcentagem <= 25) {
+    document.write("Ef");
+  } else {
+    document.write("Rf");
+  }
+</script>

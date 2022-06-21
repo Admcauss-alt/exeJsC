@@ -1,0 +1,17 @@
+<script>
+  const peso = Number(prompt("Peso:"));
+  const altura = Number(prompt("Altura:"));
+
+  const imc = peso / altura ** 2;
+
+  if (imc <= 18.5) {
+    document.write(`desnutrido`);
+  } else if (imc <= 25.0) {
+    document.write(`Normal`);
+  } else if (imc <= 30.0) {
+    document.write(`Sobrepeso`);
+  } else {
+    document.write(`gordola`);
+  }
+  document.write(`Imc é de ${imc}`);
+</script>

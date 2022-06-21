@@ -1,0 +1,18 @@
+<script>
+  const valor = Number(prompt("Qual o valor do produto?"));
+
+  var aumento;
+  if (valor <= 280) {
+    aumento = valor * 0.2 + valor;
+    document.write(`O aumento vai ser de 20% </br> Novo valor de: ${aumento}`);
+  } else if (valor <= 700) {
+    aumento = valor * 0.15 + valor;
+    document.write(`O aumento vai ser de 15% </br> Novo valor de: ${aumento}`);
+  } else if (valor <= 1500) {
+    aumento = valor * 0.1 + valor;
+    document.write(`O aumento vai ser de 10% </br> Novo valor de: ${aumento}`);
+  } else if (valor > 1500) {
+    aumento = valor * 0.05 + valor;
+    document.write(`O aumento vai ser de 5% </br> Novo valor de: ${aumento}`);
+  }
+</script>

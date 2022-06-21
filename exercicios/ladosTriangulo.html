@@ -1,0 +1,16 @@
+<script>
+  const lado1 = Number(prompt("Quanto mede o primeiro lado?"));
+  const lado2 = Number(prompt("Quanto mede o segundo lado?"));
+  const lado3 = Number(prompt("Quanto mede o terceiro lado?"));
+
+  if ((lado1 == lado2) == lado3) {
+    document.write(equilatero);
+  } else if (
+    (lado1 == lado2 && lado2 > lado3) ||
+    (lado3 == lado2 && lado1 > lado3)
+  ) {
+    document.write("isoceris");
+  } else {
+    document.write("escaleno");
+  }
+</script>

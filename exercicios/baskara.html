@@ -1,0 +1,22 @@
+<script>
+  const valorA = Number(prompt("Qual valor de A?"));
+  const valorB = Number(prompt("Qual valor de B?"));
+  const valorC = Number(prompt("Qual valor de C?"));
+  var cf1;
+  var cf2;
+
+  let delta = valorB * valorB - 4 * valorA * valorC;
+
+  document.write("Valor de Delta => " + delta + "<br/><br/>");
+  if (delta === 0) {
+    document.write("A equacao é do primeiro grau");
+  } else if (delta < 0) {
+    document.write("Delta negativo");
+  } else {
+    cf1 = (-valorB + Math.sqrt(delta)) / (2 * valorA);
+    cf2 = (-valorB - Math.sqrt(delta)) / (2 * valorA);
+
+    document.write("x' = " + cf1 + "<br/>");
+    document.write("x'' = " + cf2 + "<br/>");
+  }
+</script>
