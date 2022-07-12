@@ -1,0 +1,38 @@
+
+  <script>
+    /*
+    //PROBLEMA
+    Faça um script que leia 2 números e em seguida pergunte ao usuário qual operação ele deseja realizar. O resultado da operação deve ser acompanhado de uma frase que diga se o número é:
+    - par ou ímpar;
+    - positivo ou negativo;
+    - inteiro ou decimal.
+    */
+
+  //ENTRADA
+  let valor1 = parseInt(prompt("Qual o primeiro valor?"));
+  let valor2 = parseInt(prompt("Qual o segundo valor?"));
+  let operacao = prompt("Qual operaçao voce deseja? \n * multiplicacao \n  + soma \n  - menos \n  / divisao." );
+  //PROCESSAMENTO
+  if (operacao == "+") {
+    const result = valor1 + valor2
+    const validar = result % 2 == 0 ? "Par" : "Impar"
+    alert(`Resultado: ${result}\nimpar ou par: ${validar}\ninteiro ou decimal: ${Number.isInteger(result)}` );
+    } else if
+        (operacao == "-") {
+    const result = valor1 - valor2
+    const validar = result % 2 == 0 ? "Par" : "Impar"
+    alert(`Resultado: ${result}\nimpar ou par: ${validar}\ninteiro ou decimal: ${Number.isInteger(result)}` );
+    } else if
+        (operacao == "*") {
+    const result = valor1 + valor2
+    const validar = result % 2 == 0 ? "Par" : "Impar"
+    alert(`Resultado: ${result}\nimpar ou par: ${validar}\ninteiro ou decimal: ${Number.isInteger(result)}` );
+    } else if (operacao == "/") {
+    const result = valor1 + valor2
+    const validar = result % 2 == 0 ? "Par" : "Impar"
+    alert(`Resultado: ${result}\nimpar ou par: ${validar}\ninteiro ou decimal: ${Number.isInteger(result)}` );
+    } else {
+        alert('Operação inválida');
+    }
+  //SAÍDA
+  </script>
