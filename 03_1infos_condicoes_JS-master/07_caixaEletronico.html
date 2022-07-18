@@ -1,18 +1,26 @@
-<script>
+
+    <script>
     /*
     //PROBLEMA
     Faça um script para um caixa eletrônico. O script deverá perguntar ao usuário a valor do saque e depois informar quantas notas de cada valor serão fornecidas. As notas disponíveis serão as de 1, 5, 10, 50 e 100 reais. O valor mínimo é de 10 reais e o máximo de 600 reais. O script não deve se preocupar com a quantidade de notas existentes na máquina.
-
     Exemplo: Para sacar a quantia de 256 reais, o script fornece duas notas de 100, uma nota de 50, uma nota de 5 e uma nota de 1;
     Exemplo: Para sacar a quantia de 399 reais, o script fornece três notas de 100, uma nota de 50, quatro notas de 10, uma nota de 5 e quatro notas de 1.
     */
-
     //ENTRADA
-const valor = parseInt(prompt("Qual o valor que voce quer sacar?"))
-    //PROCESSAMENTO
-
-    
-    //SAÍDA
+    const valor = parseInt(prompt("Qual valor voce quer sacar?"))
+    if (valor >= 10 || valor <= 600){
+    const nota100 = Math.floor(valor / 100)
+    const valorSemnota100 = valor - (nota100 * 100)
+    const nota50 = Math.floor(valorSemnota100 /50)
+    const valorSemnota100nota50 = valor - ((nota100 * 100)+(nota50 * 50))
+    const nota10 = Math.floor(valorSemnota100nota50 / 10)
+    const valorSemnota100nota50nota10 = valor - ((nota100 * 100)+(nota50 * 50) + (nota10 * 10))
+    const c5 = Math.floor(valorSemnota100nota50nota10 / 5)
+    const valorSemnota100nota50nota10C5 = valor - ((nota100 * 100)+(nota50 * 50)+(nota10 * 10)+(c5 * 5))
+    const c1 = Math.floor(valorSemnota100nota50nota10C5 / 1)
+    alert(`Notas de 100: ${nota100},\nNotas de 50:${nota50},\nNotas de 10: ${nota10}, notas de 5:${c5},\nNotas de 1:${c1}`)}
+    else
+    alert("Melhor ou maior que o valor mínimo")
 
 
 </script>
