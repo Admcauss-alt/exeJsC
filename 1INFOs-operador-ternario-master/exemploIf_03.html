@@ -1,0 +1,38 @@
+<script>
+    //Programa deverá verificar se nasceu antes de 1900, antes de 2000 ou depois de 2000
+
+    //Exemplo com IF (aninhado)
+    const anoNascimento = parseInt(prompt("Informe o seu ano de nascimento:"))
+    let resultadoNaTela
+
+    if (anoNascimento < 1900) {
+        resultadoNaTela = "Você é imortal!"
+    }
+    else if (anoNascimento < 2000) {
+        resultadoNaTela = "Viu o bug do milênio!"
+    }
+    else {
+        resultadoNaTela = "Não viu o bug do milênio!"
+    }
+
+    //Exemplo com IF aninhado otimizado
+    // if (anoNascimento < 1900) resultadoNaTela = "Você é imortal!"
+    // else if (anoNascimento < 2000) resultadoNaTela = "Viu o bug do milênio!"
+    // else resultadoNaTela = "Não viu o bug do milênio!"
+
+    //Exemplo com IF ternário
+    // (anoNascimento < 1900) ? resultadoNaTela = "Você é imortal!"
+    // : (anoNascimento < 2000) ? resultadoNaTela = "Viu o bug do milênio!"
+    // : resultadoNaTela = "Não viu o bug do milênio!"
+
+    //Exemplo com IF ternário otimizado
+    // resultadoNaTela = (anoNascimento < 1900) ? "Você é imortal!"
+    // : (anoNascimento < 2000) ? "Viu o bug do milênio!"
+    // : "Não viu o bug do milênio!"
+
+    // Aninhando, chega-se a estrutura
+    // condição ? valor verdadeiro
+    // : nova condição ? valor verdadeiro
+    // : valor falso
+    document.write(resultadoNaTela)
+</script>

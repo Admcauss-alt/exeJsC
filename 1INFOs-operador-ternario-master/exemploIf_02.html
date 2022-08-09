@@ -1,0 +1,25 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script>
+    //Exemplo IF
+    const anoNascimento = parseInt(prompt("Informe o seu ano de nascimento:"))
+    let resultadoNaTela
+
+    if (anoNascimento < 2000) {
+        resultadoNaTela = "Viu o bug do milênio!"
+    }
+    else {
+        resultadoNaTela = "Não viu o bug do milênio!"
+    }
+
+    //Exemplo IF otimizado
+    // if (anoNascimento < 2000) resultadoNaTela = "Viu o bug do milênio!"
+    // else resultadoNaTela = "Não viu o bug do milênio!"
+
+    //Exemplo IF ternário
+    // (anoNascimento < 2000) ? resultadoNaTela = "Viu o bug do milênio!" : "Não viu o bug do milênio!"
+
+    //Exemplo IF ternário otimizado
+    // resultadoNaTela = (anoNascimento < 2000) ? "Viu o bug do milênio!" : "Não viu o bug do milênio!"
+    // Objetivo é chegar na estrutura condição ? valor verdadeiro : valor falso
+    document.write(resultadoNaTela)
+</script>

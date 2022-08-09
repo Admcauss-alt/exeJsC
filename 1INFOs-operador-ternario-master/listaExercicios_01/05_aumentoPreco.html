@@ -1,0 +1,20 @@
+<meta charset="UTF-8" />
+<script>
+    //Problema: Aumento de Preço
+    //Recebe o preço do produto e calcula o aumento do preço, baseado no seguinte critério:
+    //- até 280(inclusive): aumento de 20 %
+    //- até 700(inclusive): aumento de 15 %
+    //- até 1500(inclusive): aumento de 10 %
+    //- acima de 1500: aumento de 5 %
+
+    //Entrada
+    const valor = parseInt(prompt("Qual o preco?"))
+        //Processamento
+        (valor < 280) ? alert(valor * 0.20 + valor)
+         : (valor < 700) ? alert(valor * 0.15 + valor)
+          : (valor < 1500) ? alert(valor * 0.10 + valor) 
+          : alert(valor * 0.5 + valor) 
+    //Saída
+    //Saída
+
+</script>
