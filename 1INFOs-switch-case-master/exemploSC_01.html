@@ -1,0 +1,72 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script>
+    // Problema: Mês do Ano
+    // O usuário informará um número inteiro, entre 1 e 12, e o programa mostrará o mês por extenso, equivalente ao número informado.
+    // Caso o número informado não corresponder ao intervalo referido (1-12), o programa retornará que o número é inválido.
+
+    // ENTRADA
+    const mesDoAno = parseInt(prompt("Informe o mês do ano (em número inteiro 1-12):"));
+    let mesPorExtenso;
+
+    // PROCESSAMENTO
+    // Usando if else otimizado
+    // if (mesDoAno === 1) mesPorExtenso = "Janeiro!"
+    // else if (mesDoAno === 2) mesPorExtenso = "Fevereiro!"
+    // else if (mesDoAno === 3) mesPorExtenso = "Março!"
+    // else if (mesDoAno === 4) mesPorExtenso = "Abril!"
+    // else if (mesDoAno === 5) mesPorExtenso = "Maio!"
+    // else if (mesDoAno === 6) mesPorExtenso = "Junho!"
+    // else if (mesDoAno === 7) mesPorExtenso = "Julho!"
+    // else if (mesDoAno === 8) mesPorExtenso = "Agosto!"
+    // else if (mesDoAno === 9) mesPorExtenso = "Setembro!"
+    // else if (mesDoAno === 10) mesPorExtenso = "Outubro!"
+    // else if (mesDoAno === 11) mesPorExtenso = "Novembro!"
+    // else if (mesDoAno === 12) mesPorExtenso = "Dezembro!"
+    // else mesPorExtenso = "Inválido!"
+
+    // Usando switch case
+    switch (mesDoAno) {
+        case 1:
+            mesPorExtenso = "Janeiro!";
+            break;
+        case 2:
+            mesPorExtenso = "Fevereiro!";
+            break;
+        case 3:
+            mesPorExtenso = "Março!";
+            break;
+        case 4:
+            mesPorExtenso = "Abril!";
+            break;
+        case 5:
+            mesPorExtenso = "Maio!";
+            break;
+        case 6:
+            mesPorExtenso = "Junho!";
+            break;
+        case 7:
+            mesPorExtenso = "Julho!";
+            break;
+        case 8:
+            mesPorExtenso = "Agosto!";
+            break;
+        case 9:
+            mesPorExtenso = "Setembro!";
+            break;
+        case 10:
+            mesPorExtenso = "Outubro!";
+            break;
+        case 11:
+            mesPorExtenso = "Novembro!";
+            break;
+        case 12:
+            mesPorExtenso = "Dezembro!";
+            break;
+        default:
+            mesPorExtenso = "Inválido!"
+            break;
+    }
+
+    // SAÍDA
+    document.write("O número do mês é " + mesPorExtenso);
+</script>

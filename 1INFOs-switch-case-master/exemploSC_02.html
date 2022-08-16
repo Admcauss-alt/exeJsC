@@ -1,0 +1,29 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script>
+    // Problema: Dia da Semana
+    // O usuário informará um dia da semana (segunda, terça, quarta, quinta, sexta, sábado ou domingo) e o programa retornará se o dia é Dia de Folga ou Dia de Trabalho. 
+    // Considere que sábado e domingo são dias de folga.
+    
+    // ENTRADA
+    const diaDaSemana = prompt("Informe o dia da semana:");
+    let tipoDoDia;
+
+    // PROCESSAMENTO
+    // Usando if else otimizado
+    // if (diaDaSemana === "segunda" | diaDaSemana === "terça" | diaDaSemana === "quarta" | diaDaSemana === "quinta" | diaDaSemana === "sexta") tipoDoDia = "Dia de Trabalho!"
+    // else if (diaDaSemana === "sábado" | diaDaSemana === "domingo") tipoDoDia = "Dia de Folga!";
+
+    // Usando switch case
+    switch (diaDaSemana) {
+        case "sábado":
+        case "domingo":
+            tipoDoDia = "Dia de Folga!";
+            break;
+        default:
+            tipoDoDia = "Dia de Trabalho!";
+            break;
+    }
+
+    // SAÍDA
+    document.write("Hoje é " + tipoDoDia);
+</script>
