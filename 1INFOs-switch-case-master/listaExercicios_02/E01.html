@@ -1,0 +1,31 @@
+<script>
+    //Problema: Ao usuário logar em uma aplicação, ele deverá informar se é Administrador (A), Gerente (G) ou Usuário Comum (U).
+    //Usando SWITCH...CASE, apresente a seguinte mensagem:
+    //Se Administrador: Bom dia, Senhor!
+    //Se Gerente: Bom dia, Chefe!
+    //Se Usuário Comum: Bom dia!
+
+    //ENTRADA
+    alert("Administrador (A)\nGerente (G)\nUsuário Comum (U)")
+const user = prompt("Diga se o usuario é admin, gerente ou comum").toLocaleLowerCase()
+    //PROCESSAMENTO
+switch (user) {
+    case "a":
+        alert("Bom dia, Senhor!")
+        break;
+        case "g":
+        alert("Bom dia, chefe!")
+        break;
+        case "u":
+        alert("Bom dia")
+        break;
+
+    default:
+        alert("Invalido")
+        break;
+}
+
+    //SAÍDA
+
+
+</script>

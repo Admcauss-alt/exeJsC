@@ -1,0 +1,27 @@
+<script>
+    //Problema: Quando o aluno entrar no IFC, ele deverá informar o Curso que está matriculado.
+    //Usando SWITCH...CASE, apresente a seguinte mensagem:
+    //Se Técnico em Informática (I): Bloco B!
+    //Se Técnico em Química (Q): Bloco D!
+    //Se Técnico em Agropecuária (A): Bloco E!
+
+    alert("Técnico em Informática (I)\nSe Técnico em Química (Q)\nSe Técnico em Agropecuária (A)")
+const Curso = prompt("Diga seu curso").toLocaleLowerCase()
+    //PROCESSAMENTO
+switch (Curso) {
+    case "a":
+        alert("bloco e")
+        break;
+        case "q":
+        alert("Bloco d")
+        break;
+        case "i":
+        alert("Bloco b")
+        break;
+
+    default:
+        alert("Invalido")
+        break;
+}
+
+</script>
