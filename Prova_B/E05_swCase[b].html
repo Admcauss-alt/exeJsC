@@ -1,0 +1,35 @@
+<script>
+    //SWITCH CASE SWITCH CASE SWITCH CASE
+
+    //PROBLEMA: Calcular custo da hora de trabalho
+    //Peça para o dono da empresa informar o cargo do funcionário e a quantidade de horas trabalhadas na semana e calcule o custo do funcionário, considerando o seguinte cenário:
+    //O valor da hora de de trabalho de cada um é de R$ 10,00
+    //Se o funcionário for Programador, o valor da hora terá acréscimo de 10% (10/100).
+    //Se o funcionário for Líder, o valor da hora terá acréscimo de 15% (15/100).
+    //Se o funcionário for Diretor, o valor da hora terá acréscimo de 30% (30/100).
+
+    //Calcule e apresente o valor total a ser pago para o funcionário, de acordo com o seu cargo e a quantidade de horas trabalhadas.
+
+    //ENTRADA
+const Horas = Number(prompt("Quantas horas o funcionario trabalha por semana?"))
+const cargo = prompt("Diga o cargo do funcionario\nD para diretor\nL para lider\nP para programador").toLocaleLowerCase()
+    //PROCESSAMENTO
+const finalH = Horas * 10
+switch (cargo) {
+    case "d":
+        alert(`O acrescimo foi de R$ ${finalH * 0.30}`)
+        break;
+        case "l":
+        alert(`O acrescimo foi de ${finalH * 0.15}`)
+        break;
+        case "p":
+        alert(`O acrescimo foi de ${finalH * 0.10}`)
+        break;
+    default:
+        alert("cargo invalido")
+        break;
+}
+
+    //SAÍDA
+
+</script>

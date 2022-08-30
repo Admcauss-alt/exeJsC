@@ -1,0 +1,18 @@
+<script>
+    //USANDO OPERADOR TERNÁRIO USANDO OPERADOR TERNÁRIO USANDO OPERADOR TERNÁRIO
+    
+    //PROBLEMA: Pesquisa de Preço
+    //Peça para o usuário informar o preço da gasolina de três diferentes postos de combustível e considere o seguinte cenário:
+    //Se a média dos preços for até R$ 5,00 (inclusive 5), o programa deverá considerar que o preço está ACEITÁVEL
+    //Se a média dos preços for até R$ 6,50 (inclusive 6.5), o programa deverá considerar que o preço está ALTO
+    //Se a média dos preços foro acima de R$ 6,50 (6.5), o programa deverá considerar que o preço está ABUSIVO
+
+    //Apresente a situação do preço do combustível
+const posto1 = Number(prompt("Qual o preço da gasolina no primeiro posto?"));
+const posto2 = Number(prompt("Qual o preço da gasolina no segundo posto?"));
+const posto3 = Number(prompt("Qual o preço da gasolina no terceiro posto?"));
+    //PROCESSAMENTO
+    const media = (posto1 + posto2 + posto3) / 3;
+( media <= 5)? alert(`aceitavel`): 
+( media <= 6.5)? alert(`alto`): alert(`abusivo`)
+</script>
