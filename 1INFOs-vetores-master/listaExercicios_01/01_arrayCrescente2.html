@@ -1,0 +1,18 @@
+<script>
+    //Problema: Array em ordem crescente
+    //Peça para um usuário inserir dois números. Crie um array com os números, colocando-os em ordem crescente. Para ordenar, NÃO use o método sort();
+    //Retorne os elementos do array, separando-os por hífen (n1 - n2).
+
+    //ENTRADA
+const n1 = Number(prompt("Digite o primeiro valor"))
+const n2 = Number(prompt("Digite o segundo valor"))
+let array
+    //PROCESSAMENTO
+if (n1 > n2){
+ array = [n1, n2]
+} else {
+   array = [n2, n1] 
+}
+    //SAÍDA
+    alert(array.join(" - "))
+</script>

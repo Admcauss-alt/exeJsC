@@ -1,0 +1,24 @@
+<script>
+    //Problema: Itens da lista de compras
+    //Peça para o usuário inserir 3 frutas para a lista de compras. (Use 3 vezes o prompt).
+    //Peça também para o usuário inserir 3 bebidas para a lista de compras (Use outras 3 vezes o prompt).
+    //Crie um array para cada tipo de item e, ao fim, apresente os itens da sequinte forma: 
+    //As frutas a serem compradas são: fruta1, fruta2, fruta3.
+    //As bebidas a serem compradas são: bebida1, bebida2, bebida3.
+    //A lista completa de compras é: fruta1, fruta2, fruta3, bebida1, bebida2, bebida3.
+
+    //ENTRADA
+const fruta1 = prompt("Qual sua primeira fruta?")
+const fruta2 = prompt("Qual sua segunda fruta?")
+const fruta3 = prompt("Qual sua terceira fruta?")
+alert("Agora me diga 3 bebidas")
+const bebida1 = prompt("Qual sua primeira bebida?")
+const bebida2 = prompt("Qual sua segumda bebida?")
+const bebida3 = prompt("Qual sua terceira bebida?")
+    //PROCESSAMENTO
+let arrfruta = [fruta1, fruta2, fruta3]
+let arrBebidas = [bebida1, bebida2, bebida3]
+let arrfinal = [arrfruta, arrBebidas]
+    //SAÍDA
+alert(`Sua lista de frutas: ${arrfruta}\nSua lista de bebidas: ${arrBebidas}\nSua lista final: ${arrfinal}`)
+</script>
