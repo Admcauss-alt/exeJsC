@@ -4,30 +4,32 @@
     // let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
     // let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
     // let carrosHatch = ["308", "Focus", "i30"];
-    
+
     //Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta, peça também para o usuário identificar o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
 
     //Apresente a lista final de cada tipo de veículo.
 
     //ENTRADA
-const carro1 = prompt("Qual seu primeiro carro?")
-const carro2 = prompt("Qual seu segundo carro?")
-const carro3 = prompt("Qual seu terceiro carro?")
-alert("Agora me diga o tipo dos carros, 1 = SUV\n2 = Sedan\n3 = Hatch")
-const tipo1 = Number(prompt("Qual o tipo do primeiro carro?"))
-const tipo2 = Number(prompt("Qual o tipo do segundo carro?"))
-const tipo3 = Number(prompt("Qual o tipo do terceiro carro?"))
+    const carro1 = prompt("Qual seu primeiro carro?");
+    const carro2 = prompt("Qual seu segundo carro?");
+    const carro3 = prompt("Qual seu terceiro carro?");
+    alert("Agora me diga o tipo dos carros, 1 = SUV\n2 = Sedan\n3 = Hatch");
+    const tipo1 = Number(prompt("Qual o tipo do primeiro carro?"));
+    const tipo2 = Number(prompt("Qual o tipo do segundo carro?"));
+    const tipo3 = Number(prompt("Qual o tipo do terceiro carro?"));
     //PROCESSAMENTO
     let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
     let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
     let carrosHatch = ["308", "Focus", "i30"];
-if(tipo1 == 1){
-    carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport", carro1]
-} else if (tipo2){
-    cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion", carro2];
-} else{
-    carrosHatch = ["308", "Focus", "i30", carro3]
-}
+
+    (tipo1 == 1) ? carrosSUV.push(carro1) :
+        (tipo1 == 2) ? cassosSedan.push(carro2) : carrosHatch.push(carro3);
+
+    (tipo2 == 1) ? carrosSUV.push(carro1) :
+        (tipo2 == 2) ? cassosSedan.push(carro2) : carrosHatch.push(carro3);
+
+    (tipo3 == 1) ? carrosSUV.push(carro1) :
+        (tipo3 == 2) ? cassosSedan.push(carro2) : carrosHatch.push(carro3);
     //SAÍDA
-alert(`Lista de carros SUV: ${carrosSUV}\nLista de carros Sedan: ${cassosSedan}\nLista de carros Hatch: ${carrosHatch}`)
+    alert(`Lista de carros SUV: ${carrosSUV}\nLista de carros Sedan: ${cassosSedan}\nLista de carros Hatch: ${carrosHatch}`);
 </script>

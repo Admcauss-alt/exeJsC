@@ -4,18 +4,16 @@
     //Retorne os elementos do array, separando-os por hífen (n1 - n2 - n3).
 
     //ENTRADA
-const n1 = Number(prompt("Digite o primeiro valor"))
-const n2 = Number(prompt("Digite o segundo valor"))
-const n3 = Number(prompt("Digite o terceirp valor"))
-let array
+const n1 = Number(prompt("Digite o primeiro valor"));
+const n2 = Number(prompt("Digite o segundo valor"));
+const n3 = Number(prompt("Digite o terceirp valor"));
+let array;
     //PROCESSAMENTO
-if (n1 < n2 < n3){
- array = [n3,n2,n1]
-} else if(n2 < n3 <n1){
-   array = [n1, n3,n2] 
-} else {
-    array = [n2,n1,n3]
-}
-    //SAÍDA
-    alert(array.join(" - "))
+(n1 <= n2 <= n3) ? array = [n3,n2,n1] :
+(n2 <= n3 <= n1) ? array = [n1,n3,n2] :
+(n3 <= n2 <= n1) ? array = [n1,n2,n3] :
+(n1 <= n3 <= n2) ? array = [n2,n3,n1] :
+(n3 <= n1 <= n2) ? array = [n2,n1,n3] : array = [n3, n1, n2];
+//SAÍDA
+alert(array.join(" - "));
 </script>

@@ -6,16 +6,11 @@
     //Apresente a lista antiga de SUVs e a nova lista, após a remoção do veículo solicitado.
 
     //ENTRADA
-const rm = prompt("Qual SUV voce quer remover?\nEsconha entre: Tiggo, Sportage, Tucson e EcoSport")
+const rm = prompt("Qual SUV voce quer remover?\nEsconha entre: Tiggo, Sportage, Tucson e EcoSport");
     //PROCESSAMENTO
-let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"]
-if (rm == "Tiggo") {
-  alert(carrosSUV.splice(0))  
-} else if(rm == "Sportage") {
-    alert(carrosSUV.splice(1))
-} else if (rm == "Tucson") {
-    alert(carrosSUV.splice(2))
-} else {
-    alert(carrosSUV.splice(3))
-}
+let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"]    ;
+const listaAntiga = carrosSUV.join(", ");
+let indice = carrosSUV.indexOf(rm);
+carrosSUV.splice(indice, 1);
+alert(`Lista antiga: ${listaAntiga}\nLista nova: ${carrosSUV.join(", ")}`);
 </script>
