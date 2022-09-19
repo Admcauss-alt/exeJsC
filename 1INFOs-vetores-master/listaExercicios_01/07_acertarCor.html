@@ -14,7 +14,7 @@ const nomeCores = ["azul", "amarelo", "verde", "branco", "preto", "marrom", "cin
 const cor = prompt(`escolha uma cor entre: ${nomeCores}`);
     //PROCESSAMENTO
 let indice = nomeCores.indexOf(cor);
-let n = Math.floor(Math.random() * 6);
+let n = Math.floor(Math.random() * 7);
 let text
 (n == indice) ? text = `PARABÉNS!\nVOCÊ ESTÁ COM SORTE NA COR ${cor}` :
 text = 'NÃO FOI DESSA VEZ... TENTE NOVAMENTE!';
