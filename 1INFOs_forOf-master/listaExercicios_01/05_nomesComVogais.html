@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+    //PROBLEMA
+    //Considere a lista de nomes abaixo:
+    // let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
+    //Identifique os nomes que começam com qualquer vogal (A, E, I, O, U) e apresente os nomes em ordem alfabética.
+
+    //ENTRADA
+    let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
+    let nv = [];
+    let nc = [];
+    //PROCESSAMENTO
+    for (let nome of listaDeNomes) {
+        (nome.charAt(0) === "A" || nome.charAt(0) === "E" || nome.charAt(0) === "I" || nome.charAt(0) === "O" || nome.charAt(0) === "U") ? nv.push(nome) :
+            nc.push(nome);
+    }
+    //SAÍDA
+    document.write(`Os nomes que começam com vogais são: ${nv.join(" - ")}</br>E os nomes que começam com consoantes são: ${nc.join(" - ")}`);
+</script>
