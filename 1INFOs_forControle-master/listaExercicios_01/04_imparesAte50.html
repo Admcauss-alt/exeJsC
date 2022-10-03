@@ -1,0 +1,15 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    PROBLEMA
+    Faça um programa que apresente na tela os números ímpares de 1 até 50.
+    */
+
+    //ENTRADA
+    const quant = Number(prompt("Quantos numeros quer?"))
+    let n = []
+    //PROCESSAMENTO
+    for (i = 1; i <= quant; i++) if(i % 2 != 0) n.push(i)
+    //SAÍDA
+    document.write(`Os números ímpares até ${quant}</br>Os numeros sao: ${n}`)
+</script>

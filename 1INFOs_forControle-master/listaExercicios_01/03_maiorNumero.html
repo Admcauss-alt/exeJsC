@@ -1,0 +1,18 @@
+<meta charset="UTF-8">
+<script>
+    /*
+    PROBLEMA
+    Faça um programa que peça ao usuário para informar cinco números.
+    No final, apresente o maior número informado pelo usuário.
+    */
+
+    //ENTRADA
+    let nms = Number(prompt("Digite quantos números vc quer informar?"))
+    let n= []
+    let maior = 0
+    //PROCESSAMENTO
+    for (let i = 1; i <= nms; i++) n.push(Number(prompt(`Digite o número`)))
+    for (let j = 1; j <= n.length; j++) if(n[j] >= maior) maior = n[j]
+    //SAÍDA
+    document.write(`Os numeros são: ${n.join(", ")} <br>O Maior numero é: ${maior}`)
+</script>
