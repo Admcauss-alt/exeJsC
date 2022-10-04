@@ -9,33 +9,28 @@
 
     //ENTRADA
     let candidatos = [prompt("Qual o 1 ° candidato? "), prompt("Qual o 2 ° candidato?"), prompt("Qual o 3° candidato? ")];
-let av = parseInt(prompt("Quantos alunos vao votar?"));
-let cdv = [[],[],[]];
-let eleito = "Empate"
-let voto;
+    let av = parseInt(prompt("Quantos alunos vao votar?"));
+    let cdv = [[], [], []];
+    let eleito = "Empate"
+    let voto = null
     //PROCESSAMENTO
     for (i = 1; i <= av; i++) {
-    voto = Number(prompt(`Os cantidatos sao: ${candidatos.join(" - ")}\nEm qual canditado voce deseja votar?\n\n${candidatos[0]} - Digite 1\n${candidatos[1]} - Digite 2\n${candidatos[2]} - Digite 3`));
-    (voto === 1) ? cdv[0].push(voto) :
-     (voto === 2) ? cdv[1].push(voto) :
-    (voto === 3) ? cdv[2].push(voto) : alert("Voto inválido ");
-};
+        voto = Number(prompt(`Os cantidatos sao: ${candidatos.join(" - ")}\nEm qual canditado voce deseja votar?\n\n${candidatos[0]} - Digite 1\n${candidatos[1]} - Digite 2\n${candidatos[2]} - Digite 3`));
+        (voto === 1) ? cdv[0].push(voto) :
+            (voto === 2) ? cdv[1].push(voto) :
+                (voto === 3) ? cdv[2].push(voto) : alert("Voto inválido ");
+    };
 
-(cdv[0].length > cdv[1].length && cdv[0].length> cdv[2].length) ? eleito = candidatos[0] :
-(cdv[1].length > cdv[0].length && cdv[1].length> cdv[2].length) ? eleito = candidatos[1] :
-(cdv[2].length > cdv[1].length && cdv[2].length > cdv[0].length) ? eleito = candidatos[2] :
-(cdv[0].length === cdv[1].length && cdv[0].length > cdv[2].length) ? alert(`Empate entre ${candidatos[0]} e ${candidatos[1]}`) :
-(cdv[1].length === cdv[2].length && cdv[1].length > cdv[0].length) ? alert(`Empate entre ${candidatos[1]} e ${candidatos[2]}`):
-(cdv[2].length === cdv[0].length && cdv[2].length > cdv[1].length) ? alert(`Empate entre ${candidatos[2]} e ${candidatos[0]}`) : alert(`Empate entre os três candidatos`) 
+    (cdv[0].length > cdv[1].length && cdv[0].length > cdv[2].length) ? eleito = candidatos[0] :
+        (cdv[1].length > cdv[0].length && cdv[1].length > cdv[2].length) ? eleito = candidatos[1] :
+            (cdv[2].length > cdv[1].length && cdv[2].length > cdv[0].length) ? eleito = candidatos[2] :
+                (cdv[0].length === cdv[1].length && cdv[0].length > cdv[2].length) ? alert(`Empate entre ${candidatos[0]} e ${candidatos[1]}`) :
+                    (cdv[1].length === cdv[2].length && cdv[1].length > cdv[0].length) ? alert(`Empate entre ${candidatos[1]} e ${candidatos[2]}`) :
+                        (cdv[2].length === cdv[0].length && cdv[2].length > cdv[1].length) ? alert(`Empate entre ${candidatos[2]} e ${candidatos[0]}`) : alert(`Empate entre os três candidatos`);
 
-  
-
-let porcentagemCandidato1 = ((cdv[0].length*100) / av);
-
-let porcentagemCandidato2 = ((cdv[1].length*100) / av) ;
-
-let porcentagemCandidato3 = ((cdv[2].length*100) / av);
-
+    let pc1 = ((cdv[0].length * 100) / av);
+    let pc2 = ((cdv[1].length * 100) / av);
+    let pc3 = ((cdv[2].length * 100) / av);
     //SAÍDA
-    document.write(`eleito: ${eleito} <br> Votos ${candidatos[0]}: ${cdv[0].length} (${porcentagemCandidato1}%) <br> Votos ${candidatos[1]}: ${cdv[1].length} (${porcentagemCandidato2}%) <br> Votos ${candidatos[2]}: ${cdv[2].length} (${porcentagemCandidato3}%)`)
+    document.write(`O candidato eleito foi: <b>${eleito}</b> <br>O candidato: ${candidatos[0]} teve um total de: ${cdv[0].length} votos, equivalente a ${pc1}%<br>O candidato: ${candidatos[1]} teve um total de: ${cdv[1].length} votos, equivalente a ${pc2}%<br>O candidato: ${candidatos[2]} teve um total de: ${cdv[2].length} votos, equivalente a ${pc3}%`);
 </script>

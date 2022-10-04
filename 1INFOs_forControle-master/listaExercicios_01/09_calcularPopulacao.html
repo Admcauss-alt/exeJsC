@@ -6,11 +6,15 @@
     */
 
     //ENTRADA
-
-
+    let hab = parseInt(prompt("digite a quantidade de habitantes"))
+    const pz1 = parseInt(prompt("Digite o primeiro prazo de anos para a população"))
+    const pz2 = parseInt(prompt("digite o segundo prazo de anos para o cálculo da população"))
+    const taxa = parseInt(prompt("Digite a taxa de crescimento em porcentagem"))
+    let habpz1 = hab
+    let habpz2 = hab
     //PROCESSAMENTO
-
-
+    for (let tr = 1; tr <= pz1*4; tr++) habpz1 += habpz1*(taxa/100/4)
+    for (let tr2 = 1; tr2 <= pz2*4; tr2++) habpz1+= habpz2*(taxa/100/4)
     //SAÍDA
-
+    document.write(`<b>PRIMEIRO PRAZO</b></br>Em ${pz1} anos, a população sera de ${parseInt(habpz1)} habitantes</br></br><b>SEGUNDO PRAZO</b></br>Em ${pz2} anos, a população sera de ${parseInt(habpz2)} habitantes`)
 </script>
