@@ -10,8 +10,7 @@
     let habA = Number(prompt("Digite a quantodade de habitantes que será atingida"))
     let taxa = Number(prompt("Digite a taxa de crescimento"))
     //PROCESSAMENTO
-    for (var tr = 0; hab <= habA; tr ++)  hab += hab*((taxa/100)/4);
-    let anos = tr/4  
+    for (var tr = -1; hab <= habA; tr ++)  hab += hab*(taxa/100);
     //SAÍDA
-    document.write(`Ira demorar ${anos} anos para o numero de habitantes chegar a ${habA}`)
+    document.write(`Ira demorar ${tr} anos para o numero de habitantes chegar a ${habA}`)
 </script>
