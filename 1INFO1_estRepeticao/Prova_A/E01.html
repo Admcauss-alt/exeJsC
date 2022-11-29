@@ -1,0 +1,20 @@
+<script>
+    //Problema: Contar Carneirinhos
+    /*
+    Desenvolva um programa que conte os 20 carneiros que estão na fazenda. Para cada carneiro contado, pergunte se o carneiro é macho ou se o carneiro é fêmea.
+    Ao final, apresente a quantidade de machos e fêmeas que possuem na fazenda.
+    */
+
+    //Entrada
+let m = 0;
+let f = 0;
+    //Processamento
+for (let index = 1; index < 21; index++) {
+    let sexo = prompt(`O carneiro ${index} é M - macho ou F - femea?`).toUpperCase();
+    (sexo == 'M')? m ++ : f ++;
+}
+document.write(`A quantidade de carneiros machos é ${m} e a quantidade de carneiros femea é ${f}`)
+
+    //Saída
+
+</script>

@@ -1,0 +1,21 @@
+<script>
+    //Problema: Consumo de Maçãs
+    /*
+    Considere que, no intervalo, uma parte dos alunos da turma de primeiro ano do ensino médio vai até o refeitório para pegar as maçãs para comer.
+    Faça um programa que pergunte quantos alunos foram no refeitório.
+    Pergunte, para cada aluno, quantas maçãs o aluno comeu.
+    Apresente, no final do programa, o total de maçãs consumidas. Também apresente a média de maçãs consumidas por aluno.
+    */
+
+    //Entrada
+const alunos = parseInt(prompt("Quantos alunos forao ate o refeitorio?"))
+let total = 0
+    //Processamento
+for (let index = 1; index < alunos + 1; index++) {
+    let quant = Number(prompt(`Quantas maças o aluno ${index} comeu?`))
+    total += quant
+}
+const media = total/alunos
+    //Saída
+document.write(`total de maçãs consumidas ${total}</br>média de maçãs consumidas por aluno ${media}`)
+</script>
